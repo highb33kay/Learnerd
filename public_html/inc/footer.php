@@ -59,4 +59,5 @@
         </div>
     </div>
 </footer>
+<script src="https://kit.fontawesome.com/a62f058421.js" crossorigin="anonymous"></script>
 </body>

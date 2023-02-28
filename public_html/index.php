@@ -1,5 +1,5 @@
 <?php
-include 'templates/header.php'; ?>
+include 'inc/header.php'; ?>
 <style><?php include './assets/css/styles.css'; ?></style>
-<?php include 'templates/footer.php';
+<?php include 'inc/footer.php';
 ?>
