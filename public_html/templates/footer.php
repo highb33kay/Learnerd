@@ -39,7 +39,9 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-        <div class="footer-links4">
+        
+    </div>
+    <div class="footer-links4">
             <h3>New Letter</h3>
             <p>Subscribe to our newsletter and get our latest news and updates.</p>
             <form action="">
@@ -47,9 +49,14 @@
                 <button class="btn-subscribe">Subscribe</button>
             </form>
         </div>
-    </div>
     <div class="footer-bottom">
-        <p>&copy; 2021 LearnNerd. All rights reserved.</p>
+        <div class="copy"><p>&copy; 2023 LearnNerd. All rights reserved.</p></div>
+        <div class="footer-links5">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
