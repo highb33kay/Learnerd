@@ -4,7 +4,7 @@
 <body>
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
-        <a href="index.php">
+        <a href="../index.php">
             <i class="fas fa-arrow-left"></i>
             Home Page
         </a>

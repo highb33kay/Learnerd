@@ -182,6 +182,18 @@ footer ul li a:hover {
   transition: 0.3s;
 }
 
+.btn-header {
+  background-color: #fcd980;
+  color: #1c1e53;
+  padding: 10px 20px;
+  border: none;
+  border-color: #f4f4f4;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 /* Login and Register */
 
 .login-cont {
@@ -209,7 +221,7 @@ footer ul li a:hover {
   background-repeat: no-repeat;
   background-color: #1c1e53;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   color: white;
   align-items: center;
   text-align: center;
@@ -247,7 +259,7 @@ footer ul li a:hover {
   justify-content: center;
   align-items: flex-start;
   background-color: #1c1e53;
-  height: fit-content;
+  height: 100vh;
   color: #f4f4f4;
   gap: 20px;
   border-radius: 0px 10px 10px 0px;
@@ -266,7 +278,8 @@ footer ul li a:hover {
   color: #f4f4f4;
 }
 
-.login-form input {
+.login-form input,
+select {
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
@@ -332,4 +345,5 @@ textarea::placeholder {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  width: 100%;
 }

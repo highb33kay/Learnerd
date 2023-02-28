@@ -5,12 +5,6 @@
         <div class="logo-section">
             <img src="images/logo.png" alt="logo" class="logo">
             <p class="footer-text">learn with nerds</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
         </div>
         <div class="footer-links1">
             <h3>Social Media</h3>

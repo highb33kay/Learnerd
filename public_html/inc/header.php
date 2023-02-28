@@ -20,8 +20,8 @@
 
         </nav>
         <?php if (!isset($_SESSION['user_id'])) {
-            echo '<button class="btn-login">Login</button>';
+            echo '<a href="./auth/login.php"><button class="btn-header">Login</button></a>';
         } else {
-            echo '<button class="btn-login">Logout</button>';
+            echo '<button class="btn-header">Logout</button>';
         } ?>
     </header>

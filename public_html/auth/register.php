@@ -4,7 +4,7 @@
 <body>
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
-        <a href="index.php">
+        <a href="../index.php">
             <i class="fas fa-arrow-left"></i>
             Home Page
         </a>
@@ -20,11 +20,9 @@
                 <p>Register in with your email and password</p>
                 <form class="login-form-div">
                     <div class="form-group">
-                        <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
-                        <label for="role">Role</label>
                         <select id="role" name="role" required>
                         <option value="">Select your role</option>
                         <option value="tutor">Tutor</option>
@@ -32,22 +30,18 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                     </div>
                     <div class="form-group">
-                        <label for="confirm-email">Confirm Email</label>
                         <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email address" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Enter your password" required>
                     </div>
                     <div class="form-group">
-                        <label for="confirm-password">Confirm Password</label>
                         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
                     </div>
-                    <button type="submit">Register</button>
+                    <button type="submit"class="btn-login">Register</button>
                 </form>
                 <div class="login-footer">
                     <p>I have an account? <a href="login.php">Sign In</a></p>
