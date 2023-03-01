@@ -1,6 +1,6 @@
 
 <style><?php include '../assets/css/styles.css'; ?></style>
-
+<?php  ?>
 <body>
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
