@@ -76,3 +76,7 @@ Stack trace:
 #1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
 #2 {main}
   thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 20
+[02-Mar-2023 19:42:43 Europe/Berlin] PHP Warning:  Undefined array key "username" in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 12
+[02-Mar-2023 19:42:43 Europe/Berlin] PHP Warning:  Undefined array key "password" in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 13
+[02-Mar-2023 19:42:43 Europe/Berlin] PHP Warning:  Undefined array key "confirm-password" in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 14
+[02-Mar-2023 19:42:43 Europe/Berlin] PHP Warning:  Undefined array key "role" in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 15

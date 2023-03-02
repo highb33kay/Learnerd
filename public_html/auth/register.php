@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h3>
                     Register
                 </h3>
-                <p>Register in with your email and password</p>
+                <p>Register with your email and password</p>
                 <form class="login-form-div" action="<?php echo htmlspecialchars(
                                                             $_SERVER['PHP_SELF']
                                                         ); ?>" method="post">
