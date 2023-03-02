@@ -347,3 +347,8 @@ textarea::placeholder {
   cursor: pointer;
   width: 100%;
 }
+
+.has-error {
+  border: 1px solid red;
+  color: tomato;
+}

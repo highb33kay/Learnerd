@@ -1,13 +1,17 @@
 <?php
 
-require_once 'conn.php';
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
+require_once '/xampp/htdocs/Learnerd/public_html/config/conn.php';
 
 
 // registration form for users
 $username = trim($_POST['username']); 
-$password = trim($_POST['password'])
-$confirm_password = trim($_POST['confirm-password'])
-$role =  mysqli_real_escape_string(trim($_POST['role']));
+$password = trim($_POST['password']);
+$confirm_password = trim($_POST['confirm-password']);
+$role =  trim($_POST['role']);
 $username_err = $password_err = $confirm_password_err = $role = '';
 
 // processing form data when form is submitted
@@ -15,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // validate username
     if (empty($username)) {
         $username_err = 'Please enter a username.';
-    } elseif (!preg_match('/^[a-zA-Z0-9_]+$/', $username)) {))) {
+    } elseif (!preg_match('/^[a-zA-Z0-9_]+$/', $username)) {
         $username_err =
             'Username can only contain letters, numbers, and underscores.';
     } else {
@@ -48,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo 'Oops! Something went wrong. Please try again later.';
             }
             mysqli_stmt_close($stmt);
-        }
-    }
+        };
+    };
 
     // validate password
     if (empty($password)) {

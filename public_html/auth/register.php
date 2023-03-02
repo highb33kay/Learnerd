@@ -1,6 +1,6 @@
 
 <style><?php include '../assets/css/styles.css'; ?></style>
-
+<?php include '/xampp/htdocs/Learnerd/public_html/inc/functions.php' ?>
 <body>
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
@@ -24,7 +24,7 @@
                     <div class="form-group">
                         <?php echo !empty($username_err)
                             ? 'has-error'
-                            : ''; ?>">
+                            : ''; ?>
                         <input type="text" id="username" name="username" placeholder="Enter your username" value="<?php echo $username; ?>" required>
                         <span class="help-block"><?php echo $username_err; ?></span>
                     </div>
