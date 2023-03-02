@@ -29,3 +29,50 @@ Stack trace:
 #0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(93): mysqli_prepare(Object(mysqli), 'INSERT INTO `tu...')
 #1 {main}
   thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 93
+[02-Mar-2023 18:50:00 Europe/Berlin] PHP Warning:  include(conn.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 4
+[02-Mar-2023 18:50:00 Europe/Berlin] PHP Warning:  include(): Failed opening 'conn.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 4
+[02-Mar-2023 18:50:00 Europe/Berlin] PHP Warning:  require_once(/config/conn.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 11
+[02-Mar-2023 18:50:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/config/conn.php' (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:11
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(118): reg_user()
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 11
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\assets\css\styles.css:1) in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 106
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $username in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 32
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $username_err in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 33
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $role in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 40
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $role in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 43
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $password_err in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 58
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $confirm_password_err in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 64
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Warning:  Undefined variable $link in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 36
+[02-Mar-2023 18:50:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_prepare(): Argument #1 ($mysql) must be of type mysqli, null given in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:36
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(36): mysqli_prepare(NULL, 'SELECT student_...')
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(77): reg_user()
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 36
+[02-Mar-2023 18:52:39 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function reg_user(), 0 passed in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 120 and exactly 5 expected in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:20
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(120): reg_user()
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 20
+[02-Mar-2023 18:52:42 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function reg_user(), 0 passed in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 120 and exactly 5 expected in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:20
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(120): reg_user()
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 20
+[02-Mar-2023 18:53:19 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function reg_user(), 0 passed in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 120 and exactly 5 expected in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:20
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(120): reg_user()
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 20
+[02-Mar-2023 18:53:21 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function reg_user(), 0 passed in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 120 and exactly 5 expected in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php:20
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\inc\functions.php(120): reg_user()
+#1 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(5): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\inc\functions.php on line 20

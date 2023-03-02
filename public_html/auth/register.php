@@ -1,6 +1,6 @@
 <style>
     <?php include '../assets/css/styles.css'; ?>
-</style> 
+</style>
 <?php
 
 ini_set('display_errors', 1);
@@ -113,13 +113,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<body>
+<body class="reg_body">
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
-        <a href="../index.php">
-            <i class="fas fa-arrow-left"></i>
-            Home Page
-        </a>
+        <div class="linkeds">
+            <a href="../index.php">
+                <i class="fas fa-arrow-left"></i>
+                Home Page
+            </a>
+        </div>
         <div class="login-sec">
             <div class='login-img'>
                 <h3>Welcome to LearNerd</h3>
@@ -133,10 +135,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <form class="login-form-div" action="<?php echo htmlspecialchars(
                                                             $_SERVER['PHP_SELF']
                                                         ); ?>" method="post">
-                    <div class="form-group">
-                        <?php echo !empty($username_err)
-                            ? 'has-error'
-                            : ''; ?>
+                    <div class="form-group
+                        <?php echo !empty($username_err) ? 'has-error' : ''; ?>">
                         <input type="text" id="username" name="username" placeholder="Enter your username" value="<?php echo $username; ?>" required>
                         <span class="help-block"><?php echo $username_err; ?></span>
                     </div>

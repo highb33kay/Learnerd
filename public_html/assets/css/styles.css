@@ -200,6 +200,8 @@ footer ul li a:hover {
   display: flex;
   padding: 100px;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-cont a {
@@ -239,9 +241,24 @@ footer ul li a:hover {
 
 .login-sec {
   display: flex;
-  padding-top: 20px;
+  padding: 0px 100px 100px 100px;
   align-items: center;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+}
+
+.linkeds {
+  padding: 100px 100px 10px 100px;
+}
+
+.linkeds a {
+  color: #1c1e53;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .login-sec h2 {
@@ -349,6 +366,5 @@ textarea::placeholder {
 }
 
 .has-error {
-  border: 1px solid red;
   color: tomato;
 }
