@@ -2,9 +2,9 @@
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'learnerd');
+$link = mysqli_connect($dbhost, $dbuser, $dbpass, 'learnerd');
 
-if (!$conn) {
+if (!$link) {
     die('Connection to DB Failed' . mysqli_error());
 }
 

@@ -1,0 +1,31 @@
+[02-Mar-2023 10:29:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'field list' in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:34
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(34): mysqli_prepare(Object(mysqli), 'SELECT id FROM ...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 34
+[02-Mar-2023 10:33:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'id' in 'field list' in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:34
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(34): mysqli_prepare(Object(mysqli), 'SELECT id FROM ...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 34
+[02-Mar-2023 10:34:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'username' in 'where clause' in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:34
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(34): mysqli_prepare(Object(mysqli), 'SELECT student_...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 34
+[02-Mar-2023 10:36:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'role' in 'field list' in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:93
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(93): mysqli_prepare(Object(mysqli), 'INSERT INTO `st...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 93
+[02-Mar-2023 10:40:11 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:94
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(94): mysqli_stmt_bind_param(Object(mysqli_stmt), 'sss', 'highb33kay', NULL, NULL)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 94
+[02-Mar-2023 10:40:42 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\assets\css\styles.css:1) in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 104
+[02-Mar-2023 10:40:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'password' in 'field list' in E:\xampp\htdocs\Learnerd\public_html\auth\register.php:93
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\auth\register.php(93): mysqli_prepare(Object(mysqli), 'INSERT INTO `tu...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\auth\register.php on line 93

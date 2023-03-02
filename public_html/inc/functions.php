@@ -3,16 +3,14 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-
 require_once '/xampp/htdocs/Learnerd/public_html/config/conn.php';
-
 
 // registration form for users
 $username = trim($_POST['username']); 
 $password = trim($_POST['password']);
 $confirm_password = trim($_POST['confirm-password']);
-$role =  trim($_POST['role']);
-$username_err = $password_err = $confirm_password_err = $role = '';
+$role = trim($_POST['role']);
+$username_err = $password_err = $confirm_password_err = $role_err = '';
 
 // processing form data when form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -20,14 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($username)) {
         $username_err = 'Please enter a username.';
     } elseif (!preg_match('/^[a-zA-Z0-9_]+$/', $username)) {
-        $username_err =
-            'Username can only contain letters, numbers, and underscores.';
+        $username_err = 'Username can only contain letters, numbers, and underscores.';
     } else {
-
-        if ($_POST[$role] === 'tutor') {
+        if ($role === 'tutor') {
             $sql = 'SELECT id FROM tutor WHERE username = ?';
         } elseif ($role === 'student') {
-            $sql = 'SELECT id FROM students WHERE username = ?';
+            $sql = 'SELECT id FROM student WHERE username = ?';
         } else {
             return false;
         }
@@ -68,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($confirm_password)) {
         $confirm_password_err = 'Please confirm password.';
     } else {
-        $confirm_password = $confirm_password;
         if (empty($password_err) && $password != $confirm_password) {
             $confirm_password_err = 'Password did not match.';
         }
@@ -82,12 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // check input errors before inserting in database
-    if (
-        empty($username_err) &&
-        empty($password_err) &&
-        empty($confirm_password_err) &&
-        empty($role_err)
-    ) {
+    if (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($role_err)) {
         // prepare an insert statement
         if ($_POST[$role] === 'tutor') {
             $sql = 'INSERT INTO `tutor` (`username`, `password`, `role`) VALUES (?, ?, ?)';
@@ -96,16 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             return false;
         }
-        // $sql = 'INSERT INTO users (username, password, role) VALUES (?, ?, ?)';
 
         if ($stmt = mysqli_prepare($link, $sql)) {
-            mysqli_stmt_bind_param(
-                $stmt,
-                'sss',
-                $param_username,
-                $param_password,
-                $param_role
-            );
+            mysqli_stmt_bind_param($stmt, 'sss', $param_username, $param_password, $param_role);
 
             // set parameters
             $param_username = $username;
