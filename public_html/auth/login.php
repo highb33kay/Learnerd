@@ -1,6 +1,11 @@
+<?php require_once '../config/check.php'; ?>
+<!DOCTYPE html>
+<html>
 
-<style><?php include '../assets/css/styles.css'; ?></style>
-<?php  ?>
+<style>
+    <?php include '../assets/css/styles.css'; ?>
+</style>
+
 <body>
     <div class="login-cont">
         <!-- LINK TO HOMEPAGE AND ARROW ICON -->
@@ -18,7 +23,7 @@
                     Login
                 </h3>
                 <p>Sign in with your email and password</p>
-                <form class="login-form-div">
+                <form class="login-form-div" action="login.php" method="POST">
                     <!-- registration form -->
                     <div class="form-group">
                         <input type="email" name="email" id="email" placeholder="Email">
@@ -36,12 +41,19 @@
                         <button class="btn-login">Login</button>
                     </div>
                 </form>
+                <div class="error-message">
+                    <?php if (isset($_POST['email']) && isset($_POST['password']) && mysqli_num_rows($tutor_result) === 0 && mysqli_num_rows($student_result) === 0) : ?>
+                        Invalid email or password.
+                    <?php endif; ?>
+                </div>
                 <div class="login-footer">
                     <p>Don't have an account? <a href="register.php">Sign Up</a></p>
+                </div>
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="<?php session_destroy(); ?>">Log out</a></p>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a62f058421.js" crossorigin="anonymous"></script>
 </body>
-
