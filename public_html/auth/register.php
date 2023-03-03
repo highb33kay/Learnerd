@@ -10,10 +10,11 @@ require_once '/xampp/htdocs/Learnerd/public_html/config/conn.php';
 
 // registration form for users
 $username = trim($_POST['username']);
+$email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $confirm_password = trim($_POST['confirm-password']);
 $role = trim($_POST['role']);
-$username_err = $password_err = $confirm_password_err = $role_err = '';
+$username_err = $password_err = $confirm_password_err = $email_err = $role_err = '';
 
 // processing form data when form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -72,6 +73,50 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
+    // validate email
+    if (empty($email)) {
+        $email_err = 'Please enter an email.';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $email_err = 'Please enter a valid email.';
+    } else {
+        // check if email already exists
+        if ($role === 'tutor') {
+            $sql = 'SELECT tutor_id FROM tutor WHERE tutor_email = ?';
+        } elseif ($role === 'student') {
+            $sql = 'SELECT student_id FROM student WHERE student_email = ?';
+        } else {
+            return false;
+        }
+
+        if ($stmt = mysqli_prepare($link, $sql)) {
+            mysqli_stmt_bind_param($stmt, 's', $param_email);
+
+            // set parameters
+            $param_email = $email;
+
+            // attempt to execute the prepared statement
+            if (mysqli_stmt_execute($stmt)) {
+                // store result
+                mysqli_stmt_store_result($stmt);
+
+                if (mysqli_stmt_num_rows($stmt) == 1) {
+                    $email_err = 'This email is already taken.';
+                } else {
+                    $email = $email;
+                }
+            } else {
+                echo 'Oops! Something went wrong. Please try again later.';
+            }
+            mysqli_stmt_close($stmt);
+        };
+    }
+
+    // // stop execution and display error message if email is already taken
+    // if (!empty($email_err)) {
+    //     echo $email_err;
+    //     return;
+    // }
+
     // validate role
     if (empty($role)) {
         $role_err = 'Please select a role.';
@@ -80,22 +125,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // check input errors before inserting in database
-    if (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($role_err)) {
+    if (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($role_err) && empty($email_err)) {
         // prepare an insert statement
         if ($role === 'tutor') {
-            $sql = 'INSERT INTO `tutor` (`username`, `password`) VALUES (?, ?)';
+            $sql = 'INSERT INTO `tutor` (`username`, `password`, `tutor_email`) VALUES (?, ?, ?)';
         } elseif ($role === 'student') {
-            $sql = 'INSERT INTO `student` (`username`, `password`) VALUES (?, ?)';
+            $sql = 'INSERT INTO `student` (`username`, `password`, `student_email`) VALUES (?, ?, ?)';
         } else {
             return false;
         }
 
         if ($stmt = mysqli_prepare($link, $sql)) {
-            mysqli_stmt_bind_param($stmt, 'ss', $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, 'sss', $param_username, $param_password, $param_email);
 
             // set parameters
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_email = $email;
             $param_role = $role;
 
             // attempt to execute the prepared statement
@@ -153,8 +199,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                         : ''; ?>>Student</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo !empty($email_err)
+                                                ? 'has-error'
+                                                : ''; ?>">
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <span class="help-block"><?php echo $email_err; ?></span>
                     </div>
                     <div class="form-group">
                         <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm your email address" required>
