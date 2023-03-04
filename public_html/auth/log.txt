@@ -84,3 +84,10 @@ Stack trace:
 [03-Mar-2023 22:09:02 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\assets\css\styles.css:1) in E:\xampp\htdocs\Learnerd\public_html\config\check.php on line 54
 [03-Mar-2023 22:10:34 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 53
 [03-Mar-2023 22:10:38 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 53
+[04-Mar-2023 21:03:13 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:03:15 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:03:35 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:03:36 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:03:53 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:04:35 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
+[04-Mar-2023 21:04:36 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in E:\xampp\htdocs\Learnerd\public_html\auth\login.php on line 51
