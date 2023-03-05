@@ -1,14 +1,23 @@
-<?php require_once '../config/check.php'; ?>
-<!DOCTYPE html>
-<html>
+<?php
+// ini_set('display_errors', 0);
+// ini_set('error_log', 'log.txt');
+?>
 
-<style>
-    <?php include '../assets/css/styles.css'; ?>
-</style>
+<?php require_once '../config/check.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/styles.css?ver=<?php echo date('ymdhis'); ?>"  >
+</head>
 
 <body>
-    <div class="login-cont">
-        <!-- LINK TO HOMEPAGE AND ARROW ICON -->
+    <div class=" login-cont">
         <a href="../index.php">
             <i class="fas fa-arrow-left"></i>
             Home Page
@@ -24,12 +33,14 @@
                 </h3>
                 <p>Sign in with your email and password</p>
                 <form class="login-form-div" action="login.php" method="POST">
-                    <!-- registration form -->
-                    <div class="form-group">
+
+                    <div class="form-group <?php echo !empty($login_err) ? 'has-error' : ''; ?>">
                         <input type="email" name="email" id="email" placeholder="Email">
+                        <span class="help-block"><?php echo $login_err; ?></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo !empty($login_err) ? 'has-error' : ''; ?>">
                         <input type="password" name="password" id="password" placeholder="Password">
+                        <span class="help-block"><?php echo $login_err; ?></span>
                     </div>
                     <div class="form-row">
                         <label for="remember-me-checkbox">
@@ -49,11 +60,11 @@
                 <div class="login-footer">
                     <p>Don't have an account? <a href="register.php">Sign Up</a></p>
                 </div>
-                <div class="login-footer">
-                    <p>Don't have an account? <a href="<?php session_destroy(); ?>">Log out</a></p>
-                </div>
+
             </div>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a62f058421.js" crossorigin="anonymous"></script>
 </body>
+
+</html>

@@ -1,12 +1,12 @@
-<!-- connect to database --<?php
+<?php
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
-$link = mysqli_connect($dbhost, $dbuser, $dbpass, 'learnerd');
+$dbname = 'learnerd';
+$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 if (!$link) {
-    die('Connection to DB Failed' . mysqli_error());
+    die('Connection to DB Failed: ' . mysqli_connect_error());
 }
 
-echo 'Connected successfully';
-?>
+// echo 'Connected successfully';

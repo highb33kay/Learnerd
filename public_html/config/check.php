@@ -7,10 +7,8 @@ if (isset($_SESSION['user_type'])) {
 
 // kill the session
 
-
-
-ini_set('display_errors', 1);
-ini_set('error_log', 'log.txt');
+// ini_set('display_errors', 1);
+// ini_set('error_log', 'log.txt');
 
 // Get the database connection
 require_once 'conn.php';
@@ -23,13 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Query the tutor table
-    $tutor_query = "SELECT * FROM tutor WHERE tutor_email = '$email'";
-    $tutor_result = mysqli_query($link, $tutor_query);
+    $tutor_query = "SELECT * FROM tutor WHERE tutor_email = ?";
+    $tutor_stmt = mysqli_prepare($link, $tutor_query);
+    mysqli_stmt_bind_param($tutor_stmt, "s", $email);
+    mysqli_stmt_execute($tutor_stmt);
+    $tutor_result = mysqli_stmt_get_result($tutor_stmt);
 
     // Query the student table if no result from tutor table
     if (mysqli_num_rows($tutor_result) === 0) {
-        $student_query = "SELECT * FROM student WHERE student_email = '$email'";
-        $student_result = mysqli_query($link, $student_query);
+        $student_query = "SELECT * FROM student WHERE student_email = ?";
+        $student_stmt = mysqli_prepare($link, $student_query);
+        mysqli_stmt_bind_param($student_stmt, "s", $email);
+        mysqli_stmt_execute($student_stmt);
+        $student_result = mysqli_stmt_get_result($student_stmt);
 
         // If there is a result in the student table, check the password
         if (mysqli_num_rows($student_result) > 0) {
@@ -57,6 +61,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Display error message if no results in both tables
-    echo "Invalid email or password.";
+    $login_err = "Invalid email or password.";
 }
-?>
