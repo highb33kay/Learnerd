@@ -24,7 +24,7 @@ $username = $_SESSION['username'];
         </div>
         <div class="user-info">
             <?php if (isset($_SESSION['user_id'])) { ?>
-                <div class="user-name"><?php echo $_SESSION['user_name']; ?></div>
+                <div class="user-name"><?php echo $_SESSION['username']; ?></div>
                 <div class="user-profile-pic">
                     <img src="<?php echo $_SESSION['user_profile_pic']; ?>" alt="Profile Picture">
                 </div>
@@ -35,26 +35,3 @@ $username = $_SESSION['username'];
             <?php } ?>
         </div>
     </header>
-    <div class="main">
-        <div class="side-bar">
-            <div>
-                <i></i>
-                <a href="">Dashboard</a>
-            </div>
-            <div>
-                <i></i>
-                <a href="">Courses</a>
-            </div>
-            <div>
-                <i></i>
-                <a href="">Assignments</a>
-            </div>
-            <div>
-                <i></i>
-                <a href="">Grades</a>
-            </div>
-        </div>
-        <div class="main">
-
-        </div>
-    </div>

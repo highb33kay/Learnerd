@@ -29,6 +29,7 @@ header {
     background: #1c1e53;
     padding: 15px 70px 15px 50px ;
     left:0;
+    width: 25%;
 }
 
 .site-title a {
@@ -71,4 +72,28 @@ header {
 .log-out a:hover {
   background-color: #fff;
   color: #1c1e53;
+}
+
+.side-bar {
+  background-color: #15163d;
+  width: 25%;
+  color: #fff;
+  height: 100vh;
+}
+
+.side-bar-item {
+  padding: 20px;
+  width: 100%;
+  color: #f4f4f4;
+  background-color: #553636;
+}
+
+.side-bar-item :hover {
+  background-color: #000000;
+  padding-left: 50%;
+  padding-right: 50%;
+}
+
+.side-bar-item a {
+  color: #f4f4f4;
 }
