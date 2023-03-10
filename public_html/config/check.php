@@ -13,6 +13,9 @@ if (isset($_SESSION['user_type'])) {
 // Get the database connection
 require_once 'conn.php';
 
+
+$login_err = "";
+
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -43,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 session_start();
                 $_SESSION['user_type'] = 'student';
                 $_SESSION['email'] = $email;
-                header('Location: student_dashboard.php');
+                $_SESSION['username'] = $student['username'];
+                header('Location: ../student/dash.php');
                 exit;
             }
         }
@@ -55,7 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             session_start();
             $_SESSION['user_type'] = 'tutor';
             $_SESSION['email'] = $email;
-            header('Location: tutor_dashboard.php');
+            $_SESSION['username'] = $tutor['username'];
+            $_SESSION['loggedin'] = true;
+            header('Location: ../instructor/dash.php');
             exit;
         }
     }
