@@ -3,7 +3,13 @@
 include '../inc/auth.php';
 include_once '../config/constants.php';
 $username = $_SESSION['username'];
+
+// Get the database connection
+ini_set('display_errors', 1);
+ini_set('error_log', 'log.txt');
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -23,15 +29,19 @@ $username = $_SESSION['username'];
             <a href="index.php"><?php echo $site_title; ?></a>
         </div>
         <div class="user-info">
-            <?php if (isset($_SESSION['user_id'])) { ?>
+            <?php if (isset($_SESSION['username'])) { ?>
                 <div class="user-name"><?php echo $_SESSION['username']; ?></div>
-                <div class="user-profile-pic">
-                    <img src="<?php echo $_SESSION['user_profile_pic']; ?>" alt="Profile Picture">
+                <div class="user-profile-dropdown">
+                    <a href="edit_prof.php"> Hello
+                        <div class="user-profile-pic">
+                            <img src="<?php echo $_SESSION['user_profile_pic']; ?>" alt="Profile Picture">
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="edit-profile.php">Edit Profile</a>
+                        <a href="logout.php">Logout</a>
+                    </div>
                 </div>
-                <div class="log-out">
-                    <a href="logout.php">Log Out</a>
-                </div>
-                <!-- drop down here -->
             <?php } ?>
         </div>
     </header>

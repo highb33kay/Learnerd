@@ -47,6 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_type'] = 'student';
                 $_SESSION['email'] = $email;
                 $_SESSION['username'] = $student['username'];
+                $_SESSION['loggedin'] = true;
+                $_SESSION['user_id'] = $student['student_id'];
                 header('Location: ../student/dash.php');
                 exit;
             }
@@ -61,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['email'] = $email;
             $_SESSION['username'] = $tutor['username'];
             $_SESSION['loggedin'] = true;
+            $_SESSION['user_id'] = $tutor['tutor_id'];
             header('Location: ../instructor/dash.php');
             exit;
         }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +31,7 @@ header {
     background: #1c1e53;
     padding: 15px 70px 15px 50px ;
     left:0;
-    width: 25%;
+    width: 20%;
 }
 
 .site-title a {
@@ -43,7 +45,6 @@ header {
   display: flex;
   align-items: center;
     background: #1c1e53;
-    padding: 15px 200px 15px 200px;
 }
 
 .user-name {
@@ -75,25 +76,34 @@ header {
 }
 
 .side-bar {
-  background-color: #15163d;
-  width: 25%;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  color: #1c1e53;
   height: 100vh;
+  background: rgba(255, 255, 255, 0.01);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .side-bar-item {
   padding: 20px;
   width: 100%;
-  color: #f4f4f4;
-  background-color: #553636;
+  color: #1c1e53;
 }
 
 .side-bar-item :hover {
-  background-color: #000000;
-  padding-left: 50%;
-  padding-right: 50%;
+  color: #69572a;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .side-bar-item a {
-  color: #f4f4f4;
+  color: #1c1e53;
+  text-decoration: none;
+  font-size: 18px;
 }
