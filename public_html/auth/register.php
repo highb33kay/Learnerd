@@ -125,6 +125,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // check input errors before inserting in database
+    // ...
+
+    // check input errors before inserting in database
     if (empty($username_err) && empty($password_err) && empty($confirm_password_err) && empty($role_err) && empty($email_err)) {
         // prepare an insert statement
         if ($role === 'tutor') {
@@ -146,6 +149,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
+                // Get the user_id of the newly inserted user
+                $user_id = mysqli_insert_id($link);
+
+                // Insert user meta
+                $sql = 'INSERT INTO `usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (?, ?, ?)';
+
+                if ($stmt = mysqli_prepare($link, $sql)) {
+                    $meta_key = 'role';
+                    mysqli_stmt_bind_param($stmt, 'iss', $user_id, $meta_key, $param_role);
+                    mysqli_stmt_execute($stmt);
+                    mysqli_stmt_close($stmt);
+                }
+
                 // redirect to login page
                 header('location: login.php');
             } else {
