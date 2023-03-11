@@ -1,2 +1,5 @@
 [11-Mar-2023 10:41:03 Europe/Berlin] PHP Warning:  Undefined array key "user_profile_pic" in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 37
 [11-Mar-2023 10:41:44 Europe/Berlin] PHP Warning:  Undefined array key "user_profile_pic" in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 37
+[11-Mar-2023 11:16:00 Europe/Berlin] PHP Warning:  Undefined array key "user_profile_pic" in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 37
+[11-Mar-2023 11:36:35 Europe/Berlin] PHP Warning:  Undefined array key "user_profile_pic" in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 38
+[11-Mar-2023 11:37:18 Europe/Berlin] PHP Warning:  Undefined array key "user_profile_pic" in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 38

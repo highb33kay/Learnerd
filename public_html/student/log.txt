@@ -1,0 +1,14 @@
+[11-Mar-2023 12:42:57 Europe/Berlin] PHP Warning:  Undefined variable $db in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 14
+[11-Mar-2023 12:42:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in E:\xampp\htdocs\Learnerd\public_html\templates\header.php:14
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\templates\header.php(14): mysqli_query(NULL, ' select * from ...')
+#1 E:\xampp\htdocs\Learnerd\public_html\student\edit-profile.php(4): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 14
+[11-Mar-2023 12:43:55 Europe/Berlin] PHP Warning:  Undefined variable $db in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 53
+[11-Mar-2023 12:43:55 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in E:\xampp\htdocs\Learnerd\public_html\templates\header.php:53
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\templates\header.php(53): mysqli_query(NULL, ' select * from ...')
+#1 E:\xampp\htdocs\Learnerd\public_html\student\edit-profile.php(4): include('E:\\xampp\\htdocs...')
+#2 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\templates\header.php on line 53
