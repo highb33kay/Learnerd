@@ -3,7 +3,7 @@
 // ini_set('error_log', 'log.txt');
 ?>
 
-<?php require_once '../config/check.php'; ?>
+<?php require '../config/check.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">

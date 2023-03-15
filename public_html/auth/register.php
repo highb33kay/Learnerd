@@ -6,7 +6,7 @@
 ini_set('display_errors', 1);
 ini_set('error_log', 'log.txt');
 
-require_once '/xampp/htdocs/Learnerd/public_html/config/conn.php';
+require '../config/conn.php';
 
 // registration form for users
 $username = trim($_POST['username']);
@@ -52,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo 'Oops! Something went wrong. Please try again later.';
             }
             mysqli_stmt_close($stmt);
-        };
-    };
+        }
+    }
 
     // validate password
     if (empty($password)) {
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo 'Oops! Something went wrong. Please try again later.';
             }
             mysqli_stmt_close($stmt);
-        };
+        }
     }
 
     // // stop execution and display error message if email is already taken

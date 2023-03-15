@@ -1,8 +1,8 @@
 <!--header-->
-<?php require_once 'includes/header.php'; ?>
+<?php require 'includes/header.php'; ?>
 
 <!--navbar-->
-<?php require_once 'includes/navbar.php'; ?>
+<?php require 'includes/navbar.php'; ?>
 
 
     <div class="container">

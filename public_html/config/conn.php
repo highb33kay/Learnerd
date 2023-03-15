@@ -3,6 +3,7 @@ $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = '';
 $dbname = 'learnerd';
+global $link;
 $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 if (!$link) {

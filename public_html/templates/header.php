@@ -1,15 +1,11 @@
-<?php
+<?php /** @noinspection ALL */
 // check if user is not logged in else redirect them to login page\
-include '../inc/auth.php';
-include_once '../config/constants.php';
-include_once '../config/conn.php';
+require '../inc/auth.php';
+require '../config/constants.php';
+require '../config/conn.php';
 $username = $_SESSION['username'];
 
-// Get the database connection
-ini_set('display_errors', 1);
-ini_set('error_log', 'log.txt');
 
-// display the profile picture if it exists in the database
 
 $query = " select * from image ";
 $result = mysqli_query($link, $query);
@@ -21,6 +17,7 @@ while ($data = mysqli_fetch_assoc($result)) {
 <?php
 }
 ?>
+
 
 
 

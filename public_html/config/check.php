@@ -11,7 +11,7 @@ if (isset($_SESSION['user_type'])) {
 // ini_set('error_log', 'log.txt');
 
 // Get the database connection
-require_once 'conn.php';
+require 'conn.php';
 
 
 $login_err = "";
