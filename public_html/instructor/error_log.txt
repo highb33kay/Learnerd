@@ -1,0 +1,8 @@
+[23-Mar-2023 21:16:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 21
+[23-Mar-2023 21:17:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 21
+[23-Mar-2023 21:27:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
+[23-Mar-2023 21:27:37 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
+[23-Mar-2023 21:27:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
+[23-Mar-2023 21:27:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
+[23-Mar-2023 21:27:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
+[23-Mar-2023 21:39:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ">" in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 1

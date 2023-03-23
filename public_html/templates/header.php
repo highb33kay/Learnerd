@@ -11,20 +11,14 @@ $username = $_SESSION['username'];
 ini_set('display_errors', 1);
 ini_set('error_log', 'log.txt');
 
-$query = " select * from image ";
-$result = mysqli_query($link, $query);
+$user_id = $_SESSION['user_id'];
+$sql = "SELECT filename FROM usermeta WHERE user_id = '$user_id'";
+$result = mysqli_query($link, $sql);
+$row = mysqli_fetch_assoc($result);
+$filename = $row['filename'];
 
-while ($data = mysqli_fetch_assoc($result)) {
+
 ?>
-    <img src="../assets/uploads/<?php echo $data['filename']; ?>" alt="Profile Picture">
-
-<?php
-}
-?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,16 +43,7 @@ while ($data = mysqli_fetch_assoc($result)) {
                 <div class="dropdown user-profile-dropdown">
                     <a href="#" class="dropdown-toggle d-flex align-items-center text-decoration-none" role="button" id="user-profile-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="user-profile-pic me-2">
-                            <?php
-                            $result = mysqli_query($link, $query);
-
-                            while ($data = mysqli_fetch_assoc($result)) {
-                            ?>
-                                <img src="./image/<?php echo $data['filename']; ?>" alt="Profile Picture">
-
-                            <?php
-                            }
-                            ?>
+                            <img src="<?= '../assets/uploads/' . $filename; ?>" alt="Profile Picture">
                         </div>
                         <span class="text-nowrap">Hello, <?php echo $_SESSION['username']; ?></span>
                     </a>

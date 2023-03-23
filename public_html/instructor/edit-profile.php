@@ -10,16 +10,24 @@ error_reporting(E_ALL);
 
 $msg = "";
 
+// Get the current user's ID
+$user_id = $_SESSION['user_id'];
+
+// Check if the user has already uploaded a profile picture
+$sql = "SELECT filename FROM usermeta WHERE user_id = '$user_id'";
+$result = mysqli_query($link, $sql);
+$row = mysqli_fetch_assoc($result);
+$old_filename = $row['filename'];
+
 // If upload button is clicked ...
 if (isset($_POST['upload'])) {
 
     $filename = $_FILES["uploadfile"]["name"];
     $tempname = $_FILES["uploadfile"]["tmp_name"];
-    $folder = realpath('../assets/uploads/');
+    $folder = '../assets/uploads/';
     if (!file_exists($folder)) {
         mkdir($folder, 0777, true);
     }
-
 
     // Validate the uploaded file
     $valid_types = array(IMAGETYPE_GIF, IMAGETYPE_JPEG, IMAGETYPE_PNG);
@@ -34,7 +42,6 @@ if (isset($_POST['upload'])) {
         $bio = mysqli_real_escape_string($link, $_POST['bio']);
         $filename = mysqli_real_escape_string($link, $_FILES["uploadfile"]["name"]);
 
-
         // Validate the age input
         $options = array(
             'options' => array(
@@ -46,29 +53,33 @@ if (isset($_POST['upload'])) {
             $msg = "Invalid age. Please enter a number between 1 and 120.";
         } else {
 
-            // Check if the image already exists in the database
-            $sql = "SELECT * FROM usermeta WHERE filename = '$filename'";
-            $result = mysqli_query($link, $sql);
-            if (mysqli_num_rows($result) > 0) {
-                $msg = "The image '$filename' already exists in the database.";
+            // Get all the submitted data from the form
+            $sql = "UPDATE usermeta SET filename = '$filename', first_name = '$firstname', last_name = '$lastname', age = '$age', bio = '$bio' WHERE user_id = '$user_id'";
+            if (mysqli_query($link, $sql)) {
+                $msg = "Profile updated successfully!";
             } else {
+                $msg = "Failed to update profile!";
+            }
 
-                // Get all the submitted data from the form
-                $sql = "INSERT INTO usermeta (`filename`, `user_id`, `first_name`, `last_name`, `age`, `bio`) VALUES ('$filename', '{$_SESSION['user_id']}', '$firstname', '$lastname', '$age', '$bio')";
-                echo $sql;
-                var_dump(mysqli_query($link, $sql));
-
-
-                // Now let's move the uploaded image into the folder: image
-                if (move_uploaded_file($tempname, $folder)) {
-                    $msg = "Image uploaded successfully!";
-                } else {
-                    $msg = "Failed to upload image!";
+            // Remove the old profile picture
+            if ($old_filename != "" && $filename != $old_filename) {
+                $old_file = $folder . $old_filename;
+                if (file_exists($old_file)) {
+                    unlink($old_file);
                 }
+            }
+
+            // Now let's move the uploaded image into the folder: image
+            $target_file = $folder . $filename;
+            if (move_uploaded_file($tempname, $target_file)) {
+                $msg = "Profile updated successfully!";
+            } else {
+                $msg = "Failed to update profile!";
             }
         }
     }
 }
+
 
 
 ?>

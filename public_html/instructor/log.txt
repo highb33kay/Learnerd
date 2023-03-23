@@ -1,0 +1,12 @@
+[23-Mar-2023 20:06:18 Europe/Berlin] PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 20
+[23-Mar-2023 20:06:22 Europe/Berlin] PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 20
+[23-Mar-2023 20:06:55 Europe/Berlin] PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 20
+[23-Mar-2023 20:07:19 Europe/Berlin] PHP Warning:  mkdir(): Permission denied in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 20
+[23-Mar-2023 20:16:06 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 63
+[23-Mar-2023 20:16:06 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpBVqk4C&quot; to &quot;/opt/lampp/htdocs/LearNerd/public_html/assets/uploads/download.jpeg&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 63
+[23-Mar-2023 20:22:03 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 20:22:03 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpP6d6kP&quot; to &quot;../assets/uploads/download.jpeg&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 20:23:08 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 20:23:08 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpZMusPT&quot; to &quot;../assets/uploads/download.jpeg&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpW1lQ8Q&quot; to &quot;../assets/uploads/&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
