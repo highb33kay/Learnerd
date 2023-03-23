@@ -39,7 +39,6 @@ $filename = $row['filename'];
         </div>
         <div class="user-info">
             <?php if (isset($_SESSION['username'])) { ?>
-                <!-- <div class="user-name"><?php echo $_SESSION['username']; ?></div> -->
                 <div class="dropdown user-profile-dropdown">
                     <a href="#" class="dropdown-toggle d-flex align-items-center text-decoration-none" role="button" id="user-profile-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="user-profile-pic me-2">
@@ -48,7 +47,12 @@ $filename = $row['filename'];
                         <span class="text-nowrap">Hello, <?php echo $_SESSION['username']; ?></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="user-profile-dropdown">
-                        <li><a class="dropdown-item" href="edit-profile.php">Edit Profile</a></li>
+                        <?php if ($_SESSION['user_type'] == 'tutor') : ?>
+                            <li><a class="dropdown-item" href="../instructor/dash.php">Dashboard</a></li>
+                        <?php else : ?>
+                            <li><a class="dropdown-item" href="../student/dash.php">Dashboard</a></li>
+                        <?php endif; ?>
+                        <li><a class="dropdown-item" href="../templates/edit-profile.php">Edit Profile</a></li>
                         <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                     </ul>
                 </div>

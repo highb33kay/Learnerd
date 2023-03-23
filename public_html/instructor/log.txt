@@ -10,3 +10,4 @@
 [23-Mar-2023 20:23:08 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpZMusPT&quot; to &quot;../assets/uploads/download.jpeg&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
 [23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
 [23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpW1lQ8Q&quot; to &quot;../assets/uploads/&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
+[23-Mar-2023 23:29:59 Europe/Berlin] PHP Warning:  Undefined array key "role" in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 50
