@@ -1,18 +1,22 @@
-<?php /** @noinspection ALL */
+<?php
+
+/** @noinspection ALL */
 // check if user is not logged in else redirect them to login page\
 require '../inc/auth.php';
 require '../config/constants.php';
 require '../config/conn.php';
 $username = $_SESSION['username'];
 
-
+// error reporting
+ini_set('display_errors', 1);
+ini_set('error_log', 'log.txt');
 
 $query = " select * from image ";
 $result = mysqli_query($link, $query);
 
 while ($data = mysqli_fetch_assoc($result)) {
 ?>
-    <img src="./image/<?php echo $data['filename']; ?>" alt="Profile Picture">
+    <img src="../assets/uploads/<?php echo $data['filename']; ?>" alt="Profile Picture">
 
 <?php
 }

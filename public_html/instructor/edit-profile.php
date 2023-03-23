@@ -4,7 +4,9 @@
 include '../templates/header.php';
 include '../config/conn.php';
 
-error_reporting(0);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $msg = "";
 
@@ -52,8 +54,10 @@ if (isset($_POST['upload'])) {
             } else {
 
                 // Get all the submitted data from the form
-                $sql = "INSERT INTO usermeta (filename, user_id, first_name, last_name, age, bio) VALUES ('$filename', '{$_SESSION['user_id']}', '$firstname', '$lastname', '$age', '$bio')";
-                mysqli_query($link, $sql);
+                $sql = "INSERT INTO usermeta (`filename`, `user_id`, `first_name`, `last_name`, `age`, `bio`) VALUES ('$filename', '{$_SESSION['user_id']}', '$firstname', '$lastname', '$age', '$bio')";
+                echo $sql;
+                var_dump(mysqli_query($link, $sql));
+
 
                 // Now let's move the uploaded image into the folder: image
                 if (move_uploaded_file($tempname, $folder)) {
@@ -83,6 +87,7 @@ anonymous">
 
 <body>
     <div id="content">
+        <?php echo $msg; ?>
         <form method="POST" action="" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="uploadfile">Select Image:</label>
