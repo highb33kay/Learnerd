@@ -21,7 +21,7 @@ include '../templates/header.php';
             <a href="">Grades</a>
         </div>
     </div>
-    <div class="main">
+    <div class="main-content">
 
     </div>
 

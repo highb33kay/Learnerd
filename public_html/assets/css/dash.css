@@ -136,3 +136,89 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 a#user-profile-dropdown {
     color: white;
 }
+
+/* profile page */
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
+#bio {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bio h2 {
+    color: #333333;
+    font-size: 18px;
+}
+
+#bio p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* edit profile field */
+
+.bio {
+background: #fff;
+padding: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.form-control {
+width: 100%;
+height: 40px;
+padding: 5px 10px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid #ccc;
+background-color: #f9f9f9;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+border-color: #1c1e53;
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(28, 30, 83, 0.25);
+}
+
+textarea.form-control {
+height: 150px;
+}
+
+.btn-primary {
+background-color: #1c1e53;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+background-color: #141634;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}

@@ -81,6 +81,23 @@ if (isset($_POST['upload'])) {
 }
 
 
+// Get the user data from the database
+$sql = "SELECT * FROM usermeta WHERE user_id = '$user_id'";
+$result = mysqli_query($link, $sql);
+$row = mysqli_fetch_assoc($result);
+$profile_pic = $row['filename'];
+$firstname = $row['first_name'];
+$lastname = $row['last_name'];
+$age = $row['age'];
+$bio = $row['bio'];
+
+// If the user has not uploaded a profile picture, use the default image
+if ($profile_pic == "") {
+    $profile_pic = "../assets/images/default.png";
+} else {
+    $profile_pic = "../assets/uploads/" . $profile_pic;
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -98,33 +115,48 @@ anonymous">
 
 <body>
     <div id="content">
-        <?php echo $msg; ?>
-        <form method="POST" action="" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="uploadfile">Select Image:</label>
-                <input class="form-control" type="file" name="uploadfile" value="" />
+        <div class="profile" id="bio">
+            <!-- profile view -->
+
+            <h1>My Profile</h1>
+            <img id="profile-pic" src="<?php echo $profile_pic; ?>" alt="Profile picture">
+            <div id="bio">
+                <h2>Name: <?php echo $firstname . ' ' . $lastname; ?></h2>
+                <p>Age: <?php echo $age; ?></p>
+                <p>Bio: <?php echo $bio; ?></p>
             </div>
-            <div class="form-group">
-                <label for="first_name">First Name:</label>
-                <input class="form-control" type="text" name="first_name" value="" />
+            <?php echo $msg; ?>
+
+            <!-- profile edit -->
+            <div class="bio">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="uploadfile">Select Image:</label>
+                        <input class="form-control" type="file" name="uploadfile" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="first_name">First Name:</label>
+                        <input class="form-control" type="text" name="first_name" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name:</label>
+                        <input class="form-control" type="text" name="last_name" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input class="form-control" type="number" name="age" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio:</label>
+                        <textarea class="form-control" name="bio"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input class="form-control" type="text" name="last_name" value="" />
-            </div>
-            <div class="form-group">
-                <label for="age">Age:</label>
-                <input class="form-control" type="number" name="age" value="" />
-            </div>
-            <div class="form-group">
-                <label for="bio">Bio:</label>
-                <textarea class="form-control" name="bio"></textarea>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" type="submit" name="upload">UPLOAD</button>
-            </div>
-        </form>
-    </div>
+
+        </div>
 </body>
 
 </html>
