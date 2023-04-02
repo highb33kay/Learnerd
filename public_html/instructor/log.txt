@@ -11,3 +11,151 @@
 [23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
 [23-Mar-2023 20:24:27 Europe/Berlin] PHP Warning:  move_uploaded_file(): Unable to move &quot;/opt/lampp/temp/phpW1lQ8Q&quot; to &quot;../assets/uploads/&quot; in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-profile.php on line 62
 [23-Mar-2023 23:29:59 Europe/Berlin] PHP Warning:  Undefined array key "role" in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 50
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 6
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 7
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "instructor_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 8
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 9
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 10
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:12:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'learnerd.courses' doesn't exist in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php(22): mysqli_query(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 22
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 6
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 7
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "instructor_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 8
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 9
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 10
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `learnerd`.`course`.`instructor_id` at row 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php(22): mysqli_query(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 22
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 6
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 7
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "instructor_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 8
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 9
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 10
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `learnerd`.`course`.`instructor_id` at row 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php(22): mysqli_query(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 22
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 6
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 7
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "instructor_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 8
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 9
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 10
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:32 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `learnerd`.`course`.`instructor_id` at row 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php(22): mysqli_query(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 22
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 6
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 7
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "instructor_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 8
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 9
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 10
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Deprecated:  substr(): Passing null to parameter #1 ($string) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 11
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 16
+[02-Apr-2023 15:16:46 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `learnerd`.`course`.`instructor_id` at row 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php:22
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php(22): mysqli_query(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 22
+[02-Apr-2023 15:44:24 Europe/Berlin] PHP Warning:  include(../templates/course-nav.php): Failed to open stream: No such file or directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/dash.php on line 12
+[02-Apr-2023 15:44:24 Europe/Berlin] PHP Warning:  include(): Failed opening '../templates/course-nav.php' for inclusion (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/LearNerd/public_html/instructor/dash.php on line 12
+[02-Apr-2023 15:44:31 Europe/Berlin] PHP Warning:  include(../templates/course-nav.php): Failed to open stream: No such file or directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 11
+[02-Apr-2023 15:44:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../templates/course-nav.php' for inclusion (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 11
+[02-Apr-2023 15:44:33 Europe/Berlin] PHP Warning:  include(../templates/course-nav.php): Failed to open stream: No such file or directory in /opt/lampp/htdocs/LearNerd/public_html/instructor/dash.php on line 12
+[02-Apr-2023 15:44:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../templates/course-nav.php' for inclusion (include_path='.:/opt/lampp/lib/php') in /opt/lampp/htdocs/LearNerd/public_html/instructor/dash.php on line 12
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:11:09 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:22 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:15:23 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 36
+[02-Apr-2023 16:17:43 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:17:43 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:17:43 Europe/Berlin] PHP Warning:  Undefined array key "enrolled" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 34
+[02-Apr-2023 16:17:43 Europe/Berlin] PHP Warning:  Undefined array key "status" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 35
+[02-Apr-2023 16:24:35 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'category' doesn't have a default value in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php:34
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php(34): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 34
+[02-Apr-2023 16:25:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'category' doesn't have a default value in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php(35): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 35
+[02-Apr-2023 16:27:41 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 23
+[02-Apr-2023 16:27:41 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'category_id' in 'field list' in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php(32): mysqli_prepare(Object(mysqli), 'INSERT INTO cou...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 32
+[02-Apr-2023 16:36:02 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 23
+[02-Apr-2023 16:36:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'category_id' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php:36
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php(36): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/add_course.php on line 36
+[02-Apr-2023 16:36:53 Europe/Berlin] PHP Warning:  Undefined array key "category" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 42
+[02-Apr-2023 16:39:57 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'learnerd.course_enrollment' doesn't exist in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php:13
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php(13): mysqli_query(Object(mysqli), 'SELECT course.i...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 13
+[02-Apr-2023 16:42:30 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'course_category.category_name' in 'field list' in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php(17): mysqli_query(Object(mysqli), 'SELECT course.*...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 17
+[02-Apr-2023 16:42:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'course_category.category_name' in 'field list' in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php(17): mysqli_query(Object(mysqli), 'SELECT course.*...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 17
+[02-Apr-2023 16:43:40 Europe/Berlin] PHP Warning:  Undefined array key "category_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 46

@@ -40,6 +40,14 @@ header {
   flex-direction: column;
 }
 
+.main-body h3 {
+  color: #1c1e53;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .site-title {
   background: #1c1e53;
   padding: 15px 70px 15px 50px;
@@ -357,4 +365,65 @@ textarea.form-control {
   font-family: "Material Icons Outlined";
   font-size: 50px !important;
   margin: 20px;
+}
+
+/* add course page */
+
+.add-course {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.add-course label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-course input[type="text"],
+.add-course textarea,
+.add-course input[type="date"],
+.add-course input[type="file"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.add-course input[type="text"]:focus,
+.add-course input[type="date"]:focus,
+.add-course input[type="file"]:focus,
+.add-course textarea:focus {
+  border-color: #1c1e53;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(28, 30, 83, 0.25);
+}
+
+.add-course textarea {
+  height: 150px;
+}
+
+.add-course input[type="submit"] {
+  background-color: #1c1e53;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.add-course input[type="submit"]:hover {
+  background-color: #141634;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #69572a;
 }

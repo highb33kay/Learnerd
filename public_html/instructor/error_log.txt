@@ -7,3 +7,5 @@
 [23-Mar-2023 21:27:38 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 20
 [23-Mar-2023 21:39:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ">" in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 1
 [23-Mar-2023 23:27:19 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 41 in /opt/lampp/htdocs/LearNerd/public_html/templates/header.php on line 63
+[02-Apr-2023 15:22:14 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 14 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 70
+[02-Apr-2023 15:22:16 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 14 in /opt/lampp/htdocs/LearNerd/public_html/instructor/add-course.php on line 70
