@@ -27,11 +27,23 @@ header {
   justify-content: space-between;
 }
 
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.main-body {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
 .site-title {
-    background: #1c1e53;
-    padding: 15px 70px 15px 50px ;
-    left:0;
-    width: 20%;
+  background: #1c1e53;
+  padding: 15px 70px 15px 50px;
+  left: 0;
+  width: 20%;
 }
 
 .site-title a {
@@ -79,14 +91,14 @@ header {
 .side-bar {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 25%;
   color: #1c1e53;
   height: 100vh;
   background: rgba(255, 255, 255, 0.01);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .side-bar-item {
@@ -134,91 +146,130 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 a#user-profile-dropdown {
-    color: white;
+  color: white;
 }
 
 /* profile page */
 
 #profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 20px auto;
-    display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
 }
 
 #bio {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 #bio h2 {
-    color: #333333;
-    font-size: 18px;
+  color: #333333;
+  font-size: 18px;
 }
 
 #bio p {
-    color: #666666;
-    font-size: 16px;
-    line-height: 1.5;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* edit profile field */
 
 .bio {
-background: #fff;
-padding: 20px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
-margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .form-group {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
-display: block;
-font-weight: bold;
-margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .form-control {
-width: 100%;
-height: 40px;
-padding: 5px 10px;
-font-size: 16px;
-border-radius: 5px;
-border: 1px solid #ccc;
-background-color: #f9f9f9;
-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .form-control:focus {
-border-color: #1c1e53;
-outline: 0;
-box-shadow: 0 0 0 0.2rem rgba(28, 30, 83, 0.25);
+  border-color: #1c1e53;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(28, 30, 83, 0.25);
 }
 
 textarea.form-control {
-height: 150px;
+  height: 150px;
 }
 
 .btn-primary {
-background-color: #1c1e53;
-color: #fff;
-border: none;
-border-radius: 5px;
-padding: 10px 20px;
-cursor: pointer;
-transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #1c1e53;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-primary:hover {
-background-color: #141634;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #141634;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* course page */
+
+.course-overview {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+}
+
+.course-table {
+  border-collapse: collapse;
+  font-size: 18px;
+  line-height: 1.6;
+  height: fit-content;
+  width: 100%;
+}
+
+.course-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.course-table th {
+  background-color: #1c1e53;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.course-table img {
+  max-width: 100%;
+  height: auto;
 }

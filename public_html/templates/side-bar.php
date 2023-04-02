@@ -1,11 +1,11 @@
 <div class="side-bar">
     <div class="side-bar-item">
         <i></i>
-        <a href="">Dashboard</a>
+        <a href="dash.php">Dashboard</a>
     </div>
     <div class="side-bar-item">
         <i></i>
-        <a href="">Courses</a>
+        <a href="course.php">Courses</a>
     </div>
     <div class="side-bar-item">
         <i></i>
