@@ -10,10 +10,10 @@ include '../templates/header.php';
             <?php
             // Retrieve the first 5 courses from the database
             $query = "SELECT course.*, course_category.name
-FROM course
-JOIN course_category ON course.category_id = course_category.id
-LIMIT 5
-";
+                        FROM course
+                        JOIN course_category ON course.category_id = course_category.id
+                        LIMIT 5
+                    ";
             $result = mysqli_query($link, $query);
 
             // Check if there are any courses
@@ -39,7 +39,7 @@ LIMIT 5
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<tr>';
                     echo '<td>' . $i . '</td>';
-                    echo '<td><img src="../assets/uploads/' . $row['image'] . '" alt="' . $row['course_name'] . '"></td>';
+                    echo '<td><img src="../assets/uploads/' . 'courses' . $row['image'] . '" alt="' . $row['course_name'] . ' " class="course-thumbnail"></td>';
                     echo '<td>' . $row['course_name'] . '</td>';
                     echo '<td>' . 'enrolled' . '</td>';
                     echo '<td>' . 'status' . '</td>';

@@ -159,3 +159,4 @@ Stack trace:
 #1 {main}
   thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 17
 [02-Apr-2023 16:43:40 Europe/Berlin] PHP Warning:  Undefined array key "category_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 46
+[02-Apr-2023 16:51:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 18

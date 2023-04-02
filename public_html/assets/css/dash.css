@@ -29,7 +29,7 @@ header {
 
 .main {
   display: flex;
-  height: 100vh;
+  flex-wrap: wrap;
 }
 
 .main-body {
@@ -38,6 +38,7 @@ header {
   padding: 20px;
   width: 100%;
   flex-direction: column;
+  flex: 1;
 }
 
 .main-body h3 {
@@ -52,7 +53,7 @@ header {
   background: #1c1e53;
   padding: 15px 70px 15px 50px;
   left: 0;
-  width: 20%;
+  width: 25%;
 }
 
 .site-title a {
@@ -110,12 +111,13 @@ span.text-nowrap {
   flex-direction: column;
   width: 25%;
   color: #1c1e53;
-  height: 100vh;
+  min-height: 100vh;
   background: rgba(255, 255, 255, 0.01);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  flex: 0 0 auto;
 }
 
 .side-bar-item {
@@ -288,7 +290,6 @@ textarea.form-control {
 }
 
 .course-table img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -426,4 +427,13 @@ textarea.form-control {
   background-color: #141634;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: #69572a;
+}
+
+/* course thumbnail */
+
+.course-thumbnail {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
