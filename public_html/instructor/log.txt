@@ -160,3 +160,72 @@ Stack trace:
   thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 17
 [02-Apr-2023 16:43:40 Europe/Berlin] PHP Warning:  Undefined array key "category_name" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 46
 [02-Apr-2023 16:51:46 Europe/Berlin] PHP Warning:  Undefined array key "image" in /opt/lampp/htdocs/LearNerd/public_html/instructor/course.php on line 18
+[05-Apr-2023 21:17:46 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 21:18:07 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 21:19:58 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 22:19:06 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 22:19:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:9
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(9): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 9
+[05-Apr-2023 22:21:22 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 22:22:49 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:34:39 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:36:10 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:38:56 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:41:38 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:42:46 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:43:11 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:43:11 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(32): mysqli_prepare(Object(mysqli), 'UPDATE course S...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 32
+[05-Apr-2023 23:44:00 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:44:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(32): mysqli_prepare(Object(mysqli), 'UPDATE course S...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 32
+[05-Apr-2023 23:44:26 Europe/Berlin] PHP Warning:  Undefined array key "id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 6
+[05-Apr-2023 23:44:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(32): mysqli_prepare(Object(mysqli), 'UPDATE course S...')
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 32
+[05-Apr-2023 23:54:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 69
+[05-Apr-2023 23:54:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 72
+[05-Apr-2023 23:54:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 75
+[05-Apr-2023 23:54:09 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 78
+[06-Apr-2023 00:02:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 72
+[06-Apr-2023 00:02:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 75
+[06-Apr-2023 00:02:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 78
+[06-Apr-2023 00:02:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 81
+[06-Apr-2023 00:12:31 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 29
+[06-Apr-2023 00:12:31 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 31
+[06-Apr-2023 00:12:31 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'start_date' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:61
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(61): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 61
+[06-Apr-2023 00:17:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'start_date' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:46
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(46): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 46
+[06-Apr-2023 00:18:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'category_id' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:46
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(46): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 46
+[06-Apr-2023 00:19:05 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'category_id' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:46
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(46): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 46
+[06-Apr-2023 00:20:33 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'category_id' cannot be null in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php:46
+Stack trace:
+#0 /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php(46): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+  thrown in /opt/lampp/htdocs/LearNerd/public_html/instructor/edit-course.php on line 46

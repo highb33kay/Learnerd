@@ -33,6 +33,7 @@ include '../templates/header.php';
                 echo '<th>Enrolled</th>';
                 echo '<th>Status</th>';
                 echo '<th>Category</th>';
+                echo '<th>Change Status</th>';
                 echo '</tr>';
                 echo '</thead>';
                 echo '<tbody>';
@@ -51,7 +52,9 @@ include '../templates/header.php';
                     echo '<td>' . 'enrolled' . '</td>';
                     echo '<td>' . $published . '</td>';
                     echo '<td>' . $row['name'] . '</td>';
+                    echo '<td><p><a href="edit-course.php?id=' . $row['course_id'] . '">Edit Course</a></p></td>';
                     echo '</tr>';
+
                     $i++;
                 }
 
