@@ -16,6 +16,8 @@ include '../templates/header.php';
                     ";
             $result = mysqli_query($link, $query);
 
+            $published = '';
+
             // Check if there are any courses
             if (mysqli_num_rows($result) > 0) {
                 // Display the courses in a table
@@ -37,16 +39,22 @@ include '../templates/header.php';
 
                 $i = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
+                    if ($row['is_published'] == 1) {
+                        $published = 'Published';
+                    } else {
+                        $published = 'Not Published';
+                    }
                     echo '<tr>';
                     echo '<td>' . $i . '</td>';
                     echo '<td><img src="../assets/uploads/' . 'courses' . $row['image'] . '" alt="' . $row['course_name'] . ' " class="course-thumbnail"></td>';
                     echo '<td>' . $row['course_name'] . '</td>';
                     echo '<td>' . 'enrolled' . '</td>';
-                    echo '<td>' . 'status' . '</td>';
+                    echo '<td>' . $published . '</td>';
                     echo '<td>' . $row['name'] . '</td>';
                     echo '</tr>';
                     $i++;
                 }
+
 
                 echo '</tbody>';
                 echo '</table>';
