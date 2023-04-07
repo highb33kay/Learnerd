@@ -426,7 +426,7 @@ textarea.form-control {
 .add-course input[type="submit"]:hover {
   background-color: #141634;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  color: #69572a;
+  color: #fff;
 }
 
 /* course thumbnail */
@@ -436,4 +436,26 @@ textarea.form-control {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+#button {
+  background-color: #1c1e53;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+#button:hover {
+  background-color: #141634;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  width: 100%;
+}
+
+#add-cont-button {
+  padding: 10px 0;
 }

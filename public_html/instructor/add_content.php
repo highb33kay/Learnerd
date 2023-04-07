@@ -66,9 +66,9 @@ if (isset($_POST['update'])) {
     <?php include '../templates/side-bar.php'; ?>
     <div class="main-body" id="content">
 
-        <h3> Edit Course </h3>
+        <h3> Add Content to <?php echo $row['course_name'] ?> </h3>
         <div class="add-course">
-            <form action="edit-course.php?id=<?php echo $course_id; ?>" method="post" enctype="multipart/form-data">
+            <form action="add_content.php?id=<?php echo $course_id; ?>" method="post" enctype="multipart/form-data">
                 <label for="course_name">Course Name:</label>
                 <input type="text" id="course_name" name="course_name" value="<?php echo $row['course_name']; ?>" required>
 
