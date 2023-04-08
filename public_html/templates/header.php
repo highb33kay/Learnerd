@@ -17,6 +17,11 @@ $result = mysqli_query($link, $sql);
 $row = mysqli_fetch_assoc($result);
 $filename = $row['filename'];
 
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+
 
 ?>
 
