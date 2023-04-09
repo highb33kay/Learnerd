@@ -594,3 +594,13 @@ Stack trace:
 #0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(42): mysqli_stmt->execute()
 #1 {main}
   thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 42
+[09-Apr-2023 20:56:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`learnerd`.`chapters`, CONSTRAINT `fk_tutor_id` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`tutor_id`) ON DELETE CASCADE) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:42
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(42): mysqli_stmt->execute()
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 42
+[09-Apr-2023 20:56:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`learnerd`.`chapters`, CONSTRAINT `fk_tutor_id` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`tutor_id`) ON DELETE CASCADE) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:42
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(42): mysqli_stmt->execute()
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 42
