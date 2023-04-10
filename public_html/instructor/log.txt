@@ -669,3 +669,12 @@ Stack trace:
 #0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(48): mysqli_stmt->execute()
 #1 {main}
   thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 48
+[10-Apr-2023 23:53:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1 in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:33
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(33): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 33
+[11-Apr-2023 00:05:24 Europe/Berlin] PHP Warning:  Undefined array key "$chapter_title" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 38
+[11-Apr-2023 00:16:14 Europe/Berlin] PHP Warning:  Array to string conversion in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 37
+[11-Apr-2023 00:16:14 Europe/Berlin] PHP Warning:  Undefined array key "$chapter_title" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 39
+[11-Apr-2023 00:16:50 Europe/Berlin] PHP Warning:  Undefined array key "$chapter_title" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 39

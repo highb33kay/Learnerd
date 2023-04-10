@@ -105,3 +105,4 @@ Stack trace:
   thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 20
 [06-Apr-2023 18:27:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 6
 [07-Apr-2023 08:26:27 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "user" in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 23
+[10-Apr-2023 23:53:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if", expecting "," or ";" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 41
