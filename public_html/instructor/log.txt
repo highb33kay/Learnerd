@@ -604,3 +604,68 @@ Stack trace:
 #0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(42): mysqli_stmt->execute()
 #1 {main}
   thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 42
+[10-Apr-2023 19:36:55 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:38:43 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:38:52 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:39:13 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:39:20 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:39:21 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:39:21 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:44:29 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:44:34 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:44:38 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: max(): Argument #1 ($value) must contain at least one element in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:30
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(30): max(Array)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 30
+[10-Apr-2023 19:45:34 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`learnerd`.`chapters`, CONSTRAINT `fk_tutor_id` FOREIGN KEY (`tutor_id`) REFERENCES `tutor` (`tutor_id`) ON DELETE CASCADE) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:47
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(47): mysqli_stmt->execute()
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 47
+[10-Apr-2023 20:05:17 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:47
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(47): mysqli_stmt->bind_param('iiss', '15', 1, 'dssdds', 'sdsds', 15)
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 47
+[10-Apr-2023 20:24:29 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`learnerd`.`chapters`, CONSTRAINT `chapters_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `course` (`course_id`) ON DELETE CASCADE ON UPDATE CASCADE) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php:48
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php(48): mysqli_stmt->execute()
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 48

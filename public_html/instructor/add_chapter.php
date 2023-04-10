@@ -27,18 +27,24 @@ while ($row = $result->fetch_assoc()) {
 }
 
 // Get the next chapter number
-$next_chapter_number = max($chapter_numbers) + 1;
+if (!empty($chapter_numbers)) {
+    $next_chapter_number = max($chapter_numbers) + 1;
+} else {
+    $next_chapter_number = 1;
+}
+
 
 // Get form data
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_chapter'])) {
     // Get form data
     $chapter_title = $_POST['chapter_title'];
     $chapter_description = $_POST['chapter_description'];
+    $tutor_id = $_SESSION['user_id'];
 
     // Create chapter in database
-    $query = "INSERT INTO chapters (course_id, chapter_number, chapter_title, chapter_description) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO chapters (course_id, chapter_number, chapter_title, chapter_description, tutor_id) VALUES (?, ?, ?, ?, ?)";
     $stmt = $link->prepare($query);
-    $stmt->bind_param('iiss', $course_id, $next_chapter_number, $chapter_title, $chapter_description);
+    $stmt->bind_param('iissi', $course_id, $next_chapter_number, $chapter_title, $chapter_description, $tutor_id);
     $stmt->execute();
 
     header('Location: add_chapter.php?id=' . $course_id);
