@@ -1,11 +1,11 @@
 <?php
 
-include '../templates/header.php';
+// include '../templates/header.php';
 
-if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
-}
+// if (!isset($_SESSION['user_id'])) {
+//     header('Location: login.php');
+//     exit;
+// }
 
 // get course id from url
 $course_id = $_GET['id'] ?? '';
@@ -47,22 +47,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_chapter'])) {
     $stmt->bind_param('iissi', $course_id, $next_chapter_number, $chapter_title, $chapter_description, $tutor_id);
     $stmt->execute();
 
-    header('Location: add_chapter.php?id=' . $course_id);
-    exit;
+    // header('Location: add_chapter.php?id=' . $course_id);
+    // exit;
 }
 
 ?>
-
-<form method="post" action="">
-    <?php
-    echo '<label for="chapter_number">Chapter Number:</label>';
-    echo '<select name="chapter_number" id="chapter_number">';
-    echo '<option value="' . $next_chapter_number . '">' . $next_chapter_number . '</option>';
-    echo '</select>';
-    ?>
-    <label for="chapter_title">Chapter Title:</label>
-    <input type="text" name="chapter_title" id="chapter_title" value="">
-    <label for="chapter_description">Chapter Description:</label>
-    <textarea name="chapter_description" id="chapter_description" cols="30" rows="10"></textarea>
-    <input type="submit" name="save_chapter" value="Add Chapter">
-</form>
+<div class="add-course">
+    <form method="post" action="">
+        <?php
+        echo '<label for="chapter_number">Chapter Number:</label>';
+        echo '<select name="chapter_number" id="chapter_number">';
+        echo '<option value="' . $next_chapter_number . '">' . $next_chapter_number . '</option>';
+        echo '</select>';
+        ?>
+        <label for="chapter_title">Chapter Title:</label>
+        <input type="text" name="chapter_title" id="chapter_title" value="">
+        <label for="chapter_description">Chapter Description:</label>
+        <textarea name="chapter_description" id="chapter_description" cols="30" rows="10"></textarea>
+        <input type="submit" name="save_chapter" value="Add Chapter">
+    </form>
+</div>

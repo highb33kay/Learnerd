@@ -113,10 +113,14 @@ if (isset($_POST['update'])) {
                 <div id="add-cont-button">
                     <button id="button" type="button" onclick="window.location.href='add_content.php?id=<?php echo $course_id; ?>'">Add Content</button>
                 </div>
-
+                <div id="add-cont-button">
+                    <button id="button" type="button" onclick="window.location.href='chapter.php?id=<?php echo $course_id; ?>'">Chapters</button>
+                </div>
 
             </form>
         </div>
+
+
     </div>
 
 </div>

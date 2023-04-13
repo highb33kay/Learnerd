@@ -678,3 +678,23 @@ Stack trace:
 [11-Apr-2023 00:16:14 Europe/Berlin] PHP Warning:  Array to string conversion in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 37
 [11-Apr-2023 00:16:14 Europe/Berlin] PHP Warning:  Undefined array key "$chapter_title" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 39
 [11-Apr-2023 00:16:50 Europe/Berlin] PHP Warning:  Undefined array key "$chapter_title" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 39
+[12-Apr-2023 22:22:46 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:22:46 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:26:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:26:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:26:48 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:26:48 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[12-Apr-2023 22:40:24 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\edit-course.php:94) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 50
+[12-Apr-2023 22:40:44 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\edit-course.php:94) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 50
+[12-Apr-2023 22:41:34 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\edit-course.php:94) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 44
+[13-Apr-2023 04:28:23 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?' at line 1 in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:13
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php(13): mysqli_query(Object(mysqli), 'SELECT * FROM c...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 13
+[13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
+[13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
+[13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
+[13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
+[13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
+[13-Apr-2023 05:16:03 Europe/Berlin] PHP Warning:  Undefined variable $course_id in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 59
