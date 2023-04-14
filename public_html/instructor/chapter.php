@@ -42,7 +42,7 @@ include '../templates/header.php';
                 echo "<td>" . $i . "</td>";
                 echo "<td>" . $row['chapter_title'] . "</td>";
                 echo "<td>" . $row['chapter_description'] . "</td>";
-                echo "<td><p><a href='edit-chapter.php?course_id=" . $course_id . "?id=" . $row['id'] . "'>Edit Chapter</a></p></td>";
+                echo "<td><p><a href='edit-chapter.php?course_id=$course_id&id={$row['id']}'>Edit Chapter</a></p></td>";
                 echo "</tr>";
 
                 $i++;

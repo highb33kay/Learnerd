@@ -698,3 +698,96 @@ Stack trace:
 [13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
 [13-Apr-2023 04:29:33 Europe/Berlin] PHP Warning:  Undefined array key "chapter_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 43
 [13-Apr-2023 05:16:03 Europe/Berlin] PHP Warning:  Undefined variable $course_id in E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php on line 59
+[13-Apr-2023 10:15:33 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 5
+[13-Apr-2023 11:19:45 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 5
+[13-Apr-2023 11:21:20 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:27:44 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:21 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:22 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:22 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:23 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:23 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:24 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:25 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:26 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:26 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 11:28:27 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 19:58:35 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 20:00:53 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 4
+[13-Apr-2023 20:00:53 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 20:02:29 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 4
+[13-Apr-2023 20:02:29 Europe/Berlin] PHP Warning:  Undefined array key "course_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 8
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 77
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 80
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 83
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 87
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 94
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 95
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 96
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 97
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 98
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 99
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 100
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 101
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 102
+[13-Apr-2023 20:04:28 Europe/Berlin] PHP Warning:  Undefined array key "is_published" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 107
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 68
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 71
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 74
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 78
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 85
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 86
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 87
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 88
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 89
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 90
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 91
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 92
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 93
+[13-Apr-2023 20:28:02 Europe/Berlin] PHP Warning:  Undefined array key "is_published" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 98
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 68
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 71
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "start_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 74
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "end_date" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 78
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 85
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 86
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 87
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 88
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 89
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 90
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 91
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 92
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "category_id" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 93
+[13-Apr-2023 20:28:08 Europe/Berlin] PHP Warning:  Undefined array key "is_published" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 98
+[13-Apr-2023 21:27:35 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 68
+[13-Apr-2023 21:27:35 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 71
+[13-Apr-2023 21:38:52 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 68
+[13-Apr-2023 21:38:52 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 71
+[14-Apr-2023 04:28:54 Europe/Berlin] PHP Warning:  Undefined array key "course_name" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 68
+[14-Apr-2023 04:28:54 Europe/Berlin] PHP Warning:  Undefined array key "course_description" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 71
+[14-Apr-2023 04:30:58 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:38
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(38): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ss', 'dssdsd', 'sdsds')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 38
+[14-Apr-2023 04:31:09 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:38
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(38): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ss', 'dssdsds', 'sdsdss')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 38
+[14-Apr-2023 04:31:44 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:38
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(38): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ss', 'dssdsds', 'sdsdss', '15')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 38
+[14-Apr-2023 04:32:00 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 54
+[14-Apr-2023 04:32:00 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:41) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:32:10 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:41) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:32:14 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:41) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:32:16 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:41) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:32:20 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:41) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:45:27 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:45:31 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:46:16 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:49:17 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[14-Apr-2023 04:49:26 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
