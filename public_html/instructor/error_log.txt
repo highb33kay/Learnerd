@@ -178,3 +178,6 @@ Stack trace:
 [12-Apr-2023 22:26:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
 [12-Apr-2023 22:26:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
 [12-Apr-2023 22:26:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\Learnerd\public_html\instructor\get-chapter-data.php on line 3
+[15-Apr-2023 14:39:15 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "if" in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 20
+[15-Apr-2023 15:03:33 Europe/Berlin] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 63
+[15-Apr-2023 15:04:27 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 37 in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 96

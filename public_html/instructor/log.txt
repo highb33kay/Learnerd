@@ -791,3 +791,31 @@ Stack trace:
 [14-Apr-2023 04:46:16 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
 [14-Apr-2023 04:49:17 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
 [14-Apr-2023 04:49:26 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:42) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:38:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 74
+[15-Apr-2023 14:38:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 77
+[15-Apr-2023 14:42:17 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 62
+[15-Apr-2023 14:42:17 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:42:22 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:42:25 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:42:26 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:43:40 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:43:51 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 15
+[15-Apr-2023 14:43:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM chapters WHERE course_id = ? AND id = ?' at line 1 in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:16
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(16): mysqli_prepare(Object(mysqli), 'SELECT  FROM ch...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 16
+[15-Apr-2023 14:45:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'chapter_id' in 'where clause' in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php:44
+Stack trace:
+#0 E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php(44): mysqli_prepare(Object(mysqli), 'UPDATE chapters...')
+#1 {main}
+  thrown in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 44
+[15-Apr-2023 14:49:13 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 62
+[15-Apr-2023 14:49:13 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:49:21 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:49:42 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 62
+[15-Apr-2023 14:49:42 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 14:49:48 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 15:00:25 Europe/Berlin] PHP Warning:  Undefined variable $chapter_id in E:\xampp\htdocs\Learnerd\public_html\instructor\edit-chapter.php on line 63
+[15-Apr-2023 15:00:25 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
+[15-Apr-2023 15:01:19 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\Learnerd\public_html\instructor\chapter.php:45) in E:\xampp\htdocs\Learnerd\public_html\instructor\add_chapter.php on line 14
